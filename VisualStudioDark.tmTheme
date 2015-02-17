@@ -67,21 +67,7 @@
             <key>settings</key>
             <dict>
                <key>foreground</key>
-                <string>#3dc999</string>
-            </dict>
-        </dict> 
-
-
-        <!-- test -->
-        <dict>
-            <key>name</key>
-            <string>X</string>
-            <key>scope</key>
-            <string>storage.type.test.source.cs</string>
-            <key>settings</key>
-            <dict>
-               <key>foreground</key>
-                <string>#aa0</string>
+                <string>#4EC9B0</string>
             </dict>
         </dict> 
 
