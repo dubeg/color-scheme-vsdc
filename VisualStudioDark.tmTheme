@@ -29,6 +29,67 @@
 				<string>#343434</string>
 			</dict>
 		</dict>
+
+
+<!-- ===============================================  -->
+        <dict>
+            <key>name</key>
+            <string>Heading Markup</string>
+            <key>scope</key>
+            <string>markup.heading, markup.heading.markdown</string>
+            <key>settings</key>
+            <dict>
+               <key>foreground</key>
+                <string>#1679bb</string>
+            </dict>
+        </dict>
+  
+        <!-- Class declaration: : IInterface -->
+        <dict>
+            <key>name</key>
+            <string>X</string>
+            <key>scope</key>
+            <string>storage.type.interface.source.cs</string>
+            <key>settings</key>
+            <dict>
+               <key>foreground</key>
+                <string>#b8d7a3</string>
+            </dict>
+        </dict> 
+       
+
+        <!-- Class declaration: : ParentClass -->
+        <dict>
+            <key>name</key>
+            <string>X</string>
+            <key>scope</key>
+            <string>storage.type.inherit.source.cs</string>
+            <key>settings</key>
+            <dict>
+               <key>foreground</key>
+                <string>#3dc999</string>
+            </dict>
+        </dict> 
+
+
+        <!-- test -->
+        <dict>
+            <key>name</key>
+            <string>X</string>
+            <key>scope</key>
+            <string>storage.type.test.source.cs</string>
+            <key>settings</key>
+            <dict>
+               <key>foreground</key>
+                <string>#aa0</string>
+            </dict>
+        </dict> 
+
+ 
+<!-- ===============================================  -->
+
+
+<!-- Comment -->
 		<dict>
 			<key>name</key>
 			<string>Comment</string>
@@ -42,6 +103,8 @@
 				<string>#57a64a</string>
 			</dict>
 		</dict>
+
+<!-- Variables -->		
 		<dict>
 			<key>name</key>
 			<string>Variable</string>
@@ -55,6 +118,8 @@
 				<string>#FFFFFF</string>
 			</dict>
 		</dict>
+
+<!-- Keyword -->			
 		<dict>
 			<key>name</key>
 			<string>Keyword</string>
@@ -68,6 +133,8 @@
 				<string>#569CD6</string>
 			</dict>
 		</dict>
+
+<!-- Comparison Operator -->		
 		<dict>
 			<key>name</key>
 			<string>Comparision Operator</string>
@@ -81,6 +148,8 @@
 				<string>#FFFFFF</string>
 			</dict>
 		</dict>
+
+<!-- Assignment Operator -->		
 		<dict>
 			<key>name</key>
 			<string>Assignment Operator</string>
@@ -94,6 +163,8 @@
 				<string>#FFFFFF</string>
 			</dict>
 		</dict>
+
+<!-- Arithmetic Operator -->		
 		<dict>
 			<key>name</key>
 			<string>Arithmetic Operator</string>
@@ -107,6 +178,8 @@
 				<string>#FFFFFF</string>
 			</dict>
 		</dict>
+
+<!-- Number -->		
 		<dict>
 			<key>name</key>
 			<string>Number</string>
@@ -120,6 +193,8 @@
 				<string>#B5CEA8</string>
 			</dict>
 		</dict>
+
+<!-- User-defined constant-->		
 		<dict>
 			<key>name</key>
 			<string>User-defined constant</string>
@@ -133,6 +208,8 @@
 				<string>#B4CEA8</string>
 			</dict>
 		</dict>
+
+<!-- Built-in constant -->		
 		<dict>
 			<key>name</key>
 			<string>Built-in constant</string>
@@ -146,6 +223,8 @@
 				<string>#569CD6</string>
 			</dict>
 		</dict>
+
+<!-- Boolean -->				
 		<dict>
 			<key>name</key>
 			<string>Boolean</string>
@@ -159,6 +238,8 @@
 				<string>#569CD6</string>
 			</dict>
 		</dict>
+
+<!-- String -->		
 		<dict>
 			<key>name</key>
 			<string>String</string>
@@ -172,6 +253,8 @@
 				<string>#D69D85</string>
 			</dict>
 		</dict>
+
+<!-- String Interpolation -->		
 		<dict>
 			<key>name</key>
 			<string>String interpolation</string>
@@ -185,6 +268,8 @@
 				<string>#E3BBAB</string>
 			</dict>
 		</dict>
+
+<!-- Preprocessor line -->			
 		<dict>
 			<key>name</key>
 			<string>Preprocessor line</string>
@@ -198,6 +283,8 @@
 				<string>#9B9B9B</string>
 			</dict>
 		</dict>
+
+<!-- Preprocessor directive -->			
 		<dict>
 			<key>name</key>
 			<string>Preprocessor directive</string>
@@ -211,6 +298,9 @@
 				<string>#569CD6</string>
 			</dict>
 		</dict>
+
+
+<!-- Function name -->			
 		<dict>
 			<key>name</key>
 			<string>Function name</string>
@@ -224,6 +314,8 @@
 				<string>#FFFFFF</string>
 			</dict>
 		</dict>
+
+<!-- Class/namespace name -->			
 		<dict>
 			<key>name</key>
 			<string>Class name</string>
@@ -237,6 +329,8 @@
 				<string>#4EC9B0</string>
 			</dict>
 		</dict>
+
+<!-- Parameter type -->			
 		<dict>
 			<key>name</key>
 			<string>Type name</string>
@@ -250,6 +344,8 @@
 				<string>#569CD6</string>
 			</dict>
 		</dict>
+
+<!-- Storage modifier -->			
 		<dict>
 			<key>name</key>
 			<string>Type modifier</string>
@@ -263,6 +359,8 @@
 				<string>#569CD6</string>
 			</dict>
 		</dict>
+
+<!-- Inherited class name -->			
 		<dict>
 			<key>name</key>
 			<string>Inherited class name</string>
@@ -276,6 +374,8 @@
 				<string>#4EC9B0</string>
 			</dict>
 		</dict>
+
+<!--  -->			
 		<dict>
 			<key>name</key>
 			<string>Function parameter</string>
@@ -287,6 +387,8 @@
 				<string></string>
 			</dict>
 		</dict>
+
+<!--  -->		
 		<dict>
 			<key>name</key>
 			<string>Function argument and result types</string>
@@ -300,6 +402,8 @@
 				<string>#70727E</string>
 			</dict>
 		</dict>
+
+<!--  -->		
 		<dict>
 			<key>name</key>
 			<string>Section</string>
@@ -311,6 +415,8 @@
 				<string></string>
 			</dict>
 		</dict>
+
+<!--  -->		
 		<dict>
 			<key>name</key>
 			<string>Library function</string>
@@ -324,6 +430,8 @@
 				<string>#FFFFFF</string>
 			</dict>
 		</dict>
+
+<!--  -->		
 		<dict>
 			<key>name</key>
 			<string>Library object</string>
@@ -337,6 +445,8 @@
 				<string>#FFFFFF</string>
 			</dict>
 		</dict>
+
+<!--  -->		
 		<dict>
 			<key>name</key>
 			<string>Library constant</string>
@@ -350,6 +460,8 @@
 				<string>#B5CEA8</string>
 			</dict>
 		</dict>
+
+<!--  -->	
 		<dict>
 			<key>name</key>
 			<string>Library variable</string>
@@ -363,6 +475,8 @@
 				<string>#FFFFFF</string>
 			</dict>
 		</dict>
+
+<!-- JS Operator -->		
 		<dict>
 			<key>name</key>
 			<string>JS: Operator</string>
@@ -374,6 +488,8 @@
 				<string>#687687</string>
 			</dict>
 		</dict>
+
+<!-- Invalid -->		
 		<dict>
 			<key>name</key>
 			<string>Invalid</string>
@@ -385,6 +501,8 @@
 				<string>#ff3333</string>
 			</dict>
 		</dict>
+
+<!-- Invalid trailing whitespace -->		
 		<dict>
 			<key>name</key>
 			<string>Invalid trailing whitespace</string>
@@ -396,6 +514,8 @@
 				<string>#ff3333</string>
 			</dict>
 		</dict>
+
+<!-- Embedded source -->		
 		<dict>
 			<key>name</key>
 			<string>Embedded source</string>
@@ -407,6 +527,10 @@
 				<string>#282828</string>
 			</dict>
 		</dict>
+
+<!-- ------------------------------------------------- -->
+<!-- Markup / XML -->	
+<!-- ------------------------------------------------- -->	
 		<dict>
 			<key>name</key>
 			<string>Markup XML declaration</string>
@@ -533,6 +657,10 @@
 				<string>#B90690</string>
 			</dict>
 		</dict>
+
+<!-- ------------------------------------------------- -->
+<!-- CSS -->	
+<!-- ------------------------------------------------- -->			
 		<dict>
 			<key>name</key>
 			<string>§ css tag-name</string>
@@ -610,6 +738,22 @@
 				<string>#87CEFA</string>
 			</dict>
 		</dict>
+
+        <dict>
+            <key>name</key>
+            <string>X</string>
+            <key>scope</key>
+            <string>meta.class.instance.constructor</string>
+            <key>settings</key>
+            <dict>
+               <key>foreground</key>
+                <string>#A00</string>
+            </dict>
+        </dict>         
+
+<!-- ------------------------------------------------- -->
+<!-- End -->	
+<!-- ------------------------------------------------- -->			
 	</array>
 	<key>uuid</key>
 	<string>2fd1a8f9-ddfd-11e2-a28f-0800200c9a66</string>

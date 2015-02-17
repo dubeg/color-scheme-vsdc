@@ -5,7 +5,7 @@ Gutter forecolor				#2b91af
 inactive selection color 		#343434
 line highlihg 					#282828
 
-
+Heading Markup 					#1679bb
 
 
 
