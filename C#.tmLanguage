@@ -336,6 +336,54 @@
 		</dict>
 
 
+<!-- inline-type -->
+<!-- ----------------------------------------------- -->
+		<key>intype1</key>
+		<dict>
+
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.operator.new.js</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.type.instance.js</string>
+				</dict>
+			</dict>
+			<!--
+			<key>match</key>
+			<string>(private|public)?(\s[A-Z]\w*)\s\w*(;|\s)</string>
+		-->
+		</dict>
+
+
+		<key>intype2</key>
+		<dict>
+
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>storage.type.instance.source.cs</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>storage.type.interface.source.cs</string>
+				</dict>				
+			</dict>
+			<key>match</key>
+			<string>((I[A-Z]\w*)|([A-Z]\w*))\s(\w*)(;|\s)</string>
+		</dict>
+
+
+
+
 <!-- Comments -->
 <!-- ----------------------------------------------- -->
 		<key>comments</key>
@@ -501,47 +549,6 @@
 				</dict>
 			</array>
 		</dict>
-
-
-<!-- inline-type -->
-<!-- ----------------------------------------------- -->
-		<key>intype1</key>
-		<dict>
-
-			<key>captures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>keyword.operator.new.js</string>
-				</dict>
-				<key>2</key>
-				<dict>
-					<key>name</key>
-					<string>entity.name.type.instance.js</string>
-				</dict>
-			</dict>
-
-			<key>match</key>
-			<string>(private|public)?(\s[A-Z]\w*)\s\w*(;|\s)</string>
-		</dict>
-
-
-		<key>intype2</key>
-		<dict>
-
-			<key>captures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>entity.name.type.instance.js</string>
-				</dict>
-			</dict>
-			<key>match</key>
-			<string>([A-Z]\w*)\s(\w*)(;|\s)</string>
-		</dict>
-
 
 <!-- Ctor -->
 <!-- ----------------------------------------------- -->
@@ -883,8 +890,9 @@
 <!-- ----------------------------------------------- -->
 		<key>parameters</key>
 		<dict>
+
 			<key>begin</key>
-			<string>\b(ref|params|out)?\s*\b([\w.\[\]]+)\s+(\w+)\s*(=)?</string>
+			<string>\b(ref|params|out)?\s*\b((bool|byte|sbyte|char|decimal|double|float|int|uint|long|ulong|object|short|ushort|string|void|class|struct|enum|interface)[\[\]]*|([\w.]+)[\[\]]*)\s+(\w+)\s*(=)?</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
@@ -892,21 +900,31 @@
 					<key>name</key>
 					<string>storage.type.modifier.source.cs</string>
 				</dict>
-				<key>2</key>
+
+				<key>3</key>
 				<dict>
 					<key>name</key>
-					<string>storage.type.generic.source.cs</string>
+					<string>storage.type.source.cs</string>
 				</dict>
-				<key>3</key>
+
+				<key>4</key>
+				<dict>
+					<key>name</key>
+					<string>storage.type.instance.source.cs</string>
+				</dict>
+<!--
+				<key>4</key>
 				<dict>
 					<key>name</key>
 					<string>variable.parameter.function.source.cs</string>
 				</dict>
-				<key>4</key>
+				<key>5</key>
 				<dict>
 					<key>name</key>
 					<string>keyword.operator.assignment.source.cs</string>
 				</dict>
+-->
+
 			</dict>
 			<key>end</key>
 			<string>(?:(,)|(?=[\)]))</string>
@@ -919,7 +937,11 @@
 				</dict>
 			</dict>
 			<key>patterns</key>
-			<array>
+			<array>				
+				<dict>
+					<key>include</key>
+					<string>#builtinTypes</string>
+				</dict>	
 				<dict>
 					<key>include</key>
 					<string>#constants</string>
@@ -928,6 +950,7 @@
 					<key>include</key>
 					<string>#block</string>
 				</dict>
+			
 			</array>
 		</dict>
 

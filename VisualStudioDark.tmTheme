@@ -30,8 +30,8 @@
 			</dict>
 		</dict>
 
-
-<!-- ===============================================  -->
+<!-- Mods --> 
+<!-- -----------------------------------------------  -->
         <dict>
             <key>name</key>
             <string>Heading Markup</string>
@@ -44,7 +44,7 @@
             </dict>
         </dict>
   
-        <!-- Class declaration: : IInterface -->
+        <!-- interface color -->
         <dict>
             <key>name</key>
             <string>X</string>
@@ -58,7 +58,8 @@
         </dict> 
        
 
-        <!-- Class declaration: : ParentClass -->
+
+        <!-- class color in declaration -->
         <dict>
             <key>name</key>
             <string>X</string>
@@ -71,8 +72,46 @@
             </dict>
         </dict> 
 
- 
-<!-- ===============================================  -->
+       	<!-- Instance type -->
+        <dict>
+            <key>name</key>
+            <string>X</string>
+            <key>scope</key>
+            <string>storage.type.instance.source.cs</string>
+            <key>settings</key>
+            <dict>
+               <key>foreground</key>
+                <string>#4EC9B0</string>
+            </dict>
+        </dict> 
+
+        <!-- Returned type -->
+        <dict>
+            <key>name</key>
+            <string>X</string>
+            <key>scope</key>
+            <string>meta.method.return-type.source.cs</string>
+            <key>settings</key>
+            <dict>
+               <key>foreground</key>
+                <string>#4EC9B0</string>
+            </dict>
+        </dict> 
+
+
+        <!-- XXXXX -->
+        <dict>
+            <key>name</key>
+            <string>X</string>
+            <key>scope</key>
+            <string>storage.type.generic.source.cs</string>
+            <key>settings</key>
+            <dict>
+               <key>foreground</key>
+                <string>#AA0</string>
+            </dict>
+        </dict>         
+
 
 
 <!-- Comment -->
@@ -319,7 +358,7 @@
 <!-- Parameter type -->			
 		<dict>
 			<key>name</key>
-			<string>Type name</string>
+			<string>Storage type</string>
 			<key>scope</key>
 			<string>storage.type</string>
 			<key>settings</key>
