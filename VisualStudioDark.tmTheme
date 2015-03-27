@@ -111,8 +111,31 @@
                 <string>#AA0</string>
             </dict>
         </dict>         
-
-
+ 
+        <!-- JSON String Key -->
+        <dict>
+            <key>name</key>
+            <string>X</string>
+            <key>scope</key>
+            <string>meta.structure.dictionary.json string.quoted.double.json</string>
+            <key>settings</key>
+            <dict>
+               <key>foreground</key>
+                <string>#d7ba7d</string>
+            </dict>
+        </dict> 
+        <!-- JSON String Value -->
+        <dict>
+            <key>name</key>
+            <string>X</string>
+            <key>scope</key>
+            <string>meta.structure.dictionary.value.json string.quoted.double.json</string>
+            <key>settings</key>
+            <dict>
+               <key>foreground</key>
+                <string>#D69D85</string>
+            </dict>
+        </dict> 
 
 <!-- Comment -->
 		<dict>
