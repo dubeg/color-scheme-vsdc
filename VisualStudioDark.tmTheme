@@ -18,11 +18,11 @@
 				<key>foreground</key>
 				<string>#FFFFFF40</string><!-- Transparency '40' to dim tabs. -->
 				<key>invisibles</key>
-				<string>#FFFFFF40</string>
+				<string>#FFFFFF40</string> <!-- Unused in Subl, bummer. -->
 				<key>lineHighlight</key>
 				<string>#282828</string>
 				<key>gutterForeground</key>
-				<string>#2b91af</string>
+				<string>#264F78</string><!-- VS:2b91af -->
 				<key>selection</key>
 				<string>#264F78</string>
 				<key>inactiveSelection</key>
