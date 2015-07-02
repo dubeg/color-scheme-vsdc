@@ -16,7 +16,7 @@
 				<key>caret</key>
 				<string>#DCDCDC</string>
 				<key>foreground</key>
-				<string>#FFFFFF</string>
+				<string>#FFFFFF40</string><!-- Transparency '40' to dim tabs. -->
 				<key>invisibles</key>
 				<string>#FFFFFF40</string>
 				<key>lineHighlight</key>
