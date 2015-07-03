@@ -4,8 +4,10 @@
 <dict>
 	<key>name</key>
 	<string>Visual Studio Dark</string>
-	<key>author</key>
+	<key>original_author</key>
 	<string>Niklas Mollenhauer</string>
+	<key>author</key>
+	<string>github/dubeg</string>	
 	<key>settings</key>
 	<array>
 		<dict>
