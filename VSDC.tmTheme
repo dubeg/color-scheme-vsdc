@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+
 <plist version="1.0">
 <dict>
 	<key>name</key>
-	<string>Visual Studio Dark</string>
-	<key>original_author</key>
-	<string>Niklas Mollenhauer</string>
+	<string>VSDC</string>
 	<key>author</key>
 	<string>github/dubeg</string>	
+
+	<key>original_name</key>
+	<string>Visual Studio Dark</string>	
+	<key>original_author</key>
+	<string>Niklas Mollenhauer</string>
+
 	<key>settings</key>
 	<array>
 		<dict>
@@ -31,9 +36,10 @@
 				<string>#343434</string>
 			</dict>
 		</dict>
-<!-- ------------------------------------------------- -->
-<!-- Markdown -->	
-<!-- ------------------------------------------------- -->
+
+	<!-- -------- -->
+	<!-- Markdown -->	
+	<!-- -------- -->
 	<!-- 
 		Markdown scopes as defined by Markdown Extended
 
@@ -66,8 +72,7 @@
 		markup.italic.markdown 
 
 		markup.quote.markdown 			
-		punctuation.definition.blockquote.markdown 
-		
+		punctuation.definition.blockquote.markdown 	
 	-->
 
 		<!-- Heading -->
@@ -266,9 +271,9 @@
         </dict> 
 
 
-<!-- ------------------------------------------------- -->
-<!-- JSON -->	
-<!-- ------------------------------------------------- -->
+	<!-- ---- -->
+	<!-- JSON -->	
+	<!-- ---- -->
         <!-- Key -->
         <dict>
             <key>name</key>
@@ -296,9 +301,103 @@
         </dict> 	
         
 
-<!-- ------------------------------------------------- -->
-<!-- C# / CSharp -->	
-<!-- ------------------------------------------------- -->       
+	<!-- ---- -->
+	<!-- YAML -->	
+	<!-- ---- -->
+	<!-- 
+		YAML scopes as defined by the default YAML package.
+
+		source.yaml
+		string.unquoted.yaml
+		string.quoted.yaml
+		constant.yaml
+
+		meta.tag.yaml, entity.name.tag.yaml
+
+		punctuation.separator.key-value.yaml
+		punctuation.definition.string.begin.yaml
+		punctuation.definition.string.end.yaml
+	-->
+        <!-- Root -->
+        <dict>
+            <key>name</key>
+            <string>    </string>
+            <key>scope</key>
+            <string>source.yaml</string>
+            <key>settings</key>
+            <dict>
+               <key>foreground</key>
+                <string>#CCCCCC</string>
+            </dict>
+        </dict> 
+
+        <!-- Strings -->
+        <dict>
+            <key>name</key>
+            <string>String</string>
+            <key>scope</key>
+            <string>string.quoted.yaml, string.unquoted.yaml</string>
+            <key>settings</key>
+            <dict>
+               <key>foreground</key>
+                <string>#D69D85</string>
+            </dict>
+        </dict> 
+        <dict>
+            <key>name</key>
+            <string>String delimiters</string>
+            <key>scope</key>
+            <string>punctuation.definition.string.begin.yaml, punctuation.definition.string.end.yaml</string>
+            <key>settings</key>
+            <dict>
+               <key>foreground</key>
+                <string>#BD3800</string>
+            </dict>
+        </dict>        
+        
+        <!-- Keys -->
+        <dict>
+            <key>name</key>
+            <string>    </string>
+            <key>scope</key>
+            <string>entity.name.tag.yaml</string>
+            <key>settings</key>
+            <dict>
+               <key>foreground</key>
+                <string>#d7ba7d</string>
+            </dict>
+        </dict>  
+
+        <!-- Key-value separator -->
+        <dict>
+            <key>name</key>
+            <string>    </string>
+            <key>scope</key>
+            <string>punctuation.separator.key-value.yaml</string>
+            <key>settings</key>
+            <dict>
+               <key>foreground</key>
+                <string>#FFFFFF</string>
+            </dict>
+        </dict>    
+
+        <!-- Constants -->
+        <dict>
+            <key>name</key>
+            <string>    </string>
+            <key>scope</key>
+            <string>constant.yaml</string>
+            <key>settings</key>
+            <dict>
+               <key>foreground</key>
+                <string>#1679bb</string>
+            </dict>
+        </dict>  
+
+
+	<!-- ----------- -->
+	<!-- C# / CSharp -->	
+	<!-- ----------- -->       
         <!-- interface color -->
         <dict>
             <key>name</key>
@@ -365,9 +464,9 @@
         </dict>         
  
 
-<!-- ------------------------------------------------- -->
-<!-- JavaScript -->	
-<!-- ------------------------------------------------- -->	
+	<!-- ---------- -->
+	<!-- JavaScript -->	
+	<!-- ---------- -->	
 		<!-- Operator -->		
 		<dict>
 			<key>name</key>
@@ -382,9 +481,9 @@
 		</dict>
 
 
-<!-- ------------------------------------------------- -->
-<!-- Defaults -->	
-<!-- ------------------------------------------------- -->	
+	<!-- -------- -->
+	<!-- Defaults -->	
+	<!-- -------- -->	
 		<!-- Comment -->
 		<dict>
 			<key>name</key>
@@ -797,7 +896,7 @@
 			</dict>
 		</dict>
 
-		<!-- Embedded source -->		
+		<!-- Embedded source 		
 		<dict>
 			<key>name</key>
 			<string>Embedded source</string>
@@ -809,11 +908,24 @@
 				<string>#282828</string>
 			</dict>
 		</dict>
+		-->
 
+        <!-- meta.class.instance.constructor -->
+        <dict>
+            <key>name</key>
+            <string>X</string>
+            <key>scope</key>
+            <string>meta.class.instance.constructor</string>
+            <key>settings</key>
+            <dict>
+               <key>foreground</key>
+                <string>#A00</string>
+            </dict>
+        </dict>   
 
-<!-- ------------------------------------------------- -->
-<!-- Markup / XML -->	
-<!-- ------------------------------------------------- -->	
+	<!-- ------------ -->
+	<!-- Markup / XML -->	
+	<!-- ------------ -->	
 		<dict>
 			<key>name</key>
 			<string>Markup XML declaration</string>
@@ -942,105 +1054,129 @@
 		</dict>
 
 
-<!-- ------------------------------------------------- -->
-<!-- CSS -->	
-<!-- ------------------------------------------------- -->			
+	<!-- --- -->
+	<!-- CSS -->	
+	<!-- --- -->	
+
+        <!-- Tags -->		
 		<dict>
 			<key>name</key>
-			<string>§ css tag-name</string>
+			<string>Tags</string>
 			<key>scope</key>
 			<string>meta.selector.css entity.name.tag</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#D7BA7D</string>
+				<string>#1679bb</string>
 			</dict>
 		</dict>
+
+        <!-- Pseudo-classes (i.e. class:pseudo-class) -->
 		<dict>
 			<key>name</key>
-			<string>§ css:pseudo-class</string>
+			<string>:Pseudo-classes</string>
 			<key>scope</key>
-			<string>meta.selector.css entity.other.attribute-name.tag.pseudo-class</string>
+			<string>meta.selector.css entity.other.attribute-name.pseudo-class</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#D7BA7D</string>
+				<string>#1679bb</string>
 			</dict>
 		</dict>
+
+        <!-- IDs -->
 		<dict>
 			<key>name</key>
-			<string>§ css#id</string>
+			<string>Ids</string>
 			<key>scope</key>
 			<string>meta.selector.css entity.other.attribute-name.id</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#D7BA7D</string>
+				<string>#4EC9B0</string>
 			</dict>
 		</dict>
+
+        <!-- Classes -->
 		<dict>
 			<key>name</key>
-			<string>§ css.class</string>
+			<string>Classes</string>
 			<key>scope</key>
 			<string>meta.selector.css entity.other.attribute-name.class</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#D7BA7D</string>
+				<string>#4EC9B0</string>
 			</dict>
 		</dict>
+
+        <!-- Properties -->
 		<dict>
 			<key>name</key>
-			<string>§ css property-name:</string>
+			<string>Properties</string>
 			<key>scope</key>
 			<string>support.type.property-name.css</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#9CDCFE</string>
+				<string>#d7ba7d</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>§ css property-value;</string>
+			<string>Property-value</string>
 			<key>scope</key>
 			<string>meta.property-group support.constant.property-value.css, meta.property-value support.constant.property-value.css</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#C8C8C8</string>
+				<string>#D69D85</string>
 			</dict>
 		</dict>
+        <dict>
+            <key>name</key>
+            <string>Units</string>
+            <key>scope</key>
+            <string>keyword.other.unit.css</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#BA56A3</string>
+            </dict>
+        </dict>      
+
+        <!-- Functions -->
+        <dict>
+            <key>name</key>
+            <string>Units</string>
+            <key>scope</key>
+            <string>support.function.misc.css</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#92A5B3</string>
+            </dict>
+        </dict>  
+
+        <!-- At-rule (ex: @charset, @import, etc.) -->
 		<dict>
 			<key>name</key>
-			<string>§ css @at-rule</string>
+			<string>At-rule</string>
 			<key>scope</key>
-			<string>meta.preprocessor.at-rule keyword.control.at-rule</string>
+			<string>keyword.control.at-rule</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
 				<string>#87CEFA</string>
 			</dict>
-		</dict>
-
-        <dict>
-            <key>name</key>
-            <string>X</string>
-            <key>scope</key>
-            <string>meta.class.instance.constructor</string>
-            <key>settings</key>
-            <dict>
-               <key>foreground</key>
-                <string>#A00</string>
-            </dict>
-        </dict>         
+		</dict>      
 
 
-<!-- ------------------------------------------------- -->
-<!-- End -->	
-<!-- ------------------------------------------------- -->			
+	<!-- --- -->
+	<!-- End -->	
+	<!-- --- -->			
 	</array>
 	<key>uuid</key>
-	<string>2fd1a8f9-ddfd-11e2-a28f-0800200c9a66</string>
+	<string>0eef40c2-2f4b-497e-82cb-ae50d9f834ea</string>
 </dict>
 </plist>
