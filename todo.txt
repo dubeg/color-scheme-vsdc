@@ -1,6 +1,0 @@
-todo
------------------------------------------------
-
-Syntax:
-	- add captures -> List<type>
-	- add captures -> array[]
