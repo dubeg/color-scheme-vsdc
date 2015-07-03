@@ -18,9 +18,9 @@
 				<key>caret</key>
 				<string>#DCDCDC</string>
 				<key>foreground</key>
-				<string>#FFFFFF40</string><!-- Transparency '40' to dim tabs. -->
+				<string>#FFFFFF40</string><!-- Transparency '40' to dim tabs -->
 				<key>invisibles</key>
-				<string>#FFFFFF40</string> <!-- Unused in Subl, bummer. -->
+				<string>#FFFFFF40</string><!-- Unused in Subl -->
 				<key>lineHighlight</key>
 				<string>#282828</string>
 				<key>gutterForeground</key>
@@ -31,9 +31,46 @@
 				<string>#343434</string>
 			</dict>
 		</dict>
+<!-- ------------------------------------------------- -->
+<!-- Markdown -->	
+<!-- ------------------------------------------------- -->
+	<!-- 
+		Markdown scopes as defined by Markdown Extended
 
-<!-- Mods --> 
-<!-- -----------------------------------------------  -->
+		markup.heading.markdown 		
+		markup.heading.1.markdown 		
+		markup.heading.2.markdown 		
+		punctuation.definition.heading.markdown 
+
+		meta.paragraph.markdown
+		meta.dummy.line-break
+
+		meta.disable-markdown 			
+		meta.separator.markdown 
+		
+		meta.link.inline.markdown
+		meta.link.reference.def.markdown 
+
+		meta.image.inline.markdown 		
+		meta.image.reference.markdown
+
+		markup.list.numbered.markdown 	# Numbered lists
+		markup.list.unnumbered.markdown # Unnumbered lists
+		meta.paragraph.list.markdown 	# List > paragraph
+
+		markup.raw.inline.markdown
+		markup.raw.block.markdown 		 
+		markup.raw.block.fenced.markdown 
+
+		markup.bold.markdown
+		markup.italic.markdown 
+
+		markup.quote.markdown 			
+		punctuation.definition.blockquote.markdown 
+		
+	-->
+
+		<!-- Heading -->
         <dict>
             <key>name</key>
             <string>Heading Markup</string>
@@ -45,7 +82,223 @@
                 <string>#1679bb</string>
             </dict>
         </dict>
-  
+
+        <!-- Quote -->
+        <dict>
+            <key>name</key>
+            <string>Markdown Quote</string>
+            <key>scope</key>
+            <string>markup.quote.markdown</string>
+            <key>settings</key>
+            <dict>
+               <key>foreground</key>
+                <string>#92A5B3</string>
+            </dict>
+        </dict>
+
+
+        <!-- Code / Raw -->
+        <dict>
+            <key>name</key>
+            <string>Markdown Block Code</string>
+            <key>scope</key>
+            <string>markup.raw.block.markdown</string>
+            <key>settings</key>
+            <dict>
+               <key>foreground</key>
+                <string>#575757</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>Markdown Inline Code</string>
+            <key>scope</key>
+            <string>markup.raw.inline.markdown</string>
+            <key>settings</key>
+            <dict>
+               <key>foreground</key>
+                <string>#575757</string>
+            </dict>
+        </dict>
+
+        <!-- Emphasis -->
+        <dict>
+            <key>name</key>
+            <string>Bold text</string>
+            <key>scope</key>
+            <string>markup.bold.markdown</string>
+            <key>settings</key>
+            <dict>
+               <key>foreground</key>
+                <string>#E3DB6D</string>
+            </dict>
+        </dict>
+        <dict>
+           <key>name</key>
+            <string>Italic text</string>
+            <key>scope</key>
+            <string>markup.italic.markdown</string>
+            <key>settings</key>
+            <dict>
+               <key>foreground</key>
+                <string>#E3DB6D</string>
+            </dict>
+        </dict>
+
+        <!-- Inline line break -->
+        <dict>
+           <key>name</key>
+            <string>Inline line break</string>
+            <key>scope</key>
+            <string>meta.dummy.line-break</string>
+            <key>settings</key>
+            <dict>
+               <key>background</key>
+                <string>#2E2E2E</string>
+            </dict>
+        </dict>
+
+        <!-- Root scope -->
+        <dict>
+           <key>name</key>
+            <string>Root text</string>
+            <key>scope</key>
+            <string>text.html.markdown</string>
+            <key>settings</key>
+            <dict>
+               <key>foreground</key>
+                <string>#CCCCCC</string>
+            </dict>
+        </dict>
+
+        <!-- Link -->
+        <dict>
+           <key>name</key>
+            <string>Link</string>
+            <key>scope</key>
+            <string>meta.link.inline.markdown</string>
+            <key>settings</key>
+            <dict>
+               <key>foreground</key>
+                <string>#4EC9B0</string>
+            </dict>
+        </dict>
+        <dict>
+           <key>name</key>
+            <string>Link title</string>
+            <key>scope</key>
+            <string>string.other.link.title.markdown</string>
+            <key>settings</key>
+            <dict>
+               <key>foreground</key>
+                <string>#217362</string>
+            </dict>
+        </dict>   
+
+        <!-- Image -->
+        <dict>
+           <key>name</key>
+            <string>Image</string>
+            <key>scope</key>
+            <string>meta.image.inline.markdown</string>
+            <key>settings</key>
+            <dict>
+               <key>foreground</key>
+                <string>#4EC9B0</string>
+            </dict>
+        </dict>
+        <dict>
+           <key>name</key>
+            <string>Image title</string>
+            <key>scope</key>
+            <string>string.other.link.description.markdown</string>
+            <key>settings</key>
+            <dict>
+               <key>foreground</key>
+                <string>#217362</string>
+            </dict>
+        </dict> 
+        <dict>
+           <key>name</key>
+            <string>Image Optional title</string>
+            <key>scope</key>
+            <string>string.other.link.description.title.markdown</string>
+            <key>settings</key>
+            <dict>
+               <key>foreground</key>
+                <string>#4EC9B0</string>
+            </dict>
+        </dict>  
+        <dict>
+           <key>name</key>
+            <string>Image Reference</string>
+            <key>scope</key>
+            <string>meta.link.reference.def.markdown</string>
+            <key>settings</key>
+            <dict>
+               <key>foreground</key>
+                <string>#4EC9B0</string>
+            </dict>
+        </dict>
+
+        <!-- List -->     
+        <dict>
+           <key>name</key>
+            <string>Unnumbered List</string>
+            <key>scope</key>
+            <string>markup.list.unnumbered.markdown</string>
+            <key>settings</key>
+            <dict>
+               <key>foreground</key>
+                <string>#BA56A3</string>
+            </dict>
+        </dict>        
+        <dict>
+           <key>name</key>
+            <string>Numbered List</string>
+            <key>scope</key>
+            <string>markup.list.numbered.markdown</string>
+            <key>settings</key>
+            <dict>
+               <key>foreground</key>
+                <string>#BA56A3</string>
+            </dict>
+        </dict> 
+
+
+<!-- ------------------------------------------------- -->
+<!-- JSON -->	
+<!-- ------------------------------------------------- -->
+        <!-- Key -->
+        <dict>
+            <key>name</key>
+            <string>Key string</string>
+            <key>scope</key>
+            <string>meta.structure.dictionary.json string.quoted.double.json</string>
+            <key>settings</key>
+            <dict>
+               <key>foreground</key>
+                <string>#d7ba7d</string>
+            </dict>
+        </dict> 
+
+        <!-- Value -->
+        <dict>
+            <key>name</key>
+            <string>Value string</string>
+            <key>scope</key>
+            <string>meta.structure.dictionary.value.json string.quoted.double.json</string>
+            <key>settings</key>
+            <dict>
+               <key>foreground</key>
+                <string>#D69D85</string>
+            </dict>
+        </dict> 	
+        
+
+<!-- ------------------------------------------------- -->
+<!-- C# / CSharp -->	
+<!-- ------------------------------------------------- -->       
         <!-- interface color -->
         <dict>
             <key>name</key>
@@ -58,8 +311,6 @@
                 <string>#b8d7a3</string>
             </dict>
         </dict> 
-       
-
 
         <!-- class color in declaration -->
         <dict>
@@ -100,7 +351,6 @@
             </dict>
         </dict> 
 
-
         <!-- XXXXX -->
         <dict>
             <key>name</key>
@@ -114,32 +364,28 @@
             </dict>
         </dict>         
  
-        <!-- JSON String Key -->
-        <dict>
-            <key>name</key>
-            <string>X</string>
-            <key>scope</key>
-            <string>meta.structure.dictionary.json string.quoted.double.json</string>
-            <key>settings</key>
-            <dict>
-               <key>foreground</key>
-                <string>#d7ba7d</string>
-            </dict>
-        </dict> 
-        <!-- JSON String Value -->
-        <dict>
-            <key>name</key>
-            <string>X</string>
-            <key>scope</key>
-            <string>meta.structure.dictionary.value.json string.quoted.double.json</string>
-            <key>settings</key>
-            <dict>
-               <key>foreground</key>
-                <string>#D69D85</string>
-            </dict>
-        </dict> 
 
-<!-- Comment -->
+<!-- ------------------------------------------------- -->
+<!-- JavaScript -->	
+<!-- ------------------------------------------------- -->	
+		<!-- Operator -->		
+		<dict>
+			<key>name</key>
+			<string>JS: Operator</string>
+			<key>scope</key>
+			<string>keyword.operator.js</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#687687</string>
+			</dict>
+		</dict>
+
+
+<!-- ------------------------------------------------- -->
+<!-- Defaults -->	
+<!-- ------------------------------------------------- -->	
+		<!-- Comment -->
 		<dict>
 			<key>name</key>
 			<string>Comment</string>
@@ -154,7 +400,7 @@
 			</dict>
 		</dict>
 
-<!-- Variables -->		
+		<!-- Variables -->		
 		<dict>
 			<key>name</key>
 			<string>Variable</string>
@@ -169,7 +415,7 @@
 			</dict>
 		</dict>
 
-<!-- Keyword -->			
+		<!-- Keyword -->			
 		<dict>
 			<key>name</key>
 			<string>Keyword</string>
@@ -184,7 +430,7 @@
 			</dict>
 		</dict>
 
-<!-- Comparison Operator -->		
+		<!-- Comparison Operator -->		
 		<dict>
 			<key>name</key>
 			<string>Comparision Operator</string>
@@ -199,7 +445,7 @@
 			</dict>
 		</dict>
 
-<!-- Assignment Operator -->		
+		<!-- Assignment Operator -->		
 		<dict>
 			<key>name</key>
 			<string>Assignment Operator</string>
@@ -214,7 +460,7 @@
 			</dict>
 		</dict>
 
-<!-- Arithmetic Operator -->		
+		<!-- Arithmetic Operator -->		
 		<dict>
 			<key>name</key>
 			<string>Arithmetic Operator</string>
@@ -229,7 +475,7 @@
 			</dict>
 		</dict>
 
-<!-- Number -->		
+		<!-- Number -->		
 		<dict>
 			<key>name</key>
 			<string>Number</string>
@@ -244,7 +490,7 @@
 			</dict>
 		</dict>
 
-<!-- User-defined constant-->		
+		<!-- User-defined constant-->		
 		<dict>
 			<key>name</key>
 			<string>User-defined constant</string>
@@ -259,7 +505,7 @@
 			</dict>
 		</dict>
 
-<!-- Built-in constant -->		
+		<!-- Built-in constant -->		
 		<dict>
 			<key>name</key>
 			<string>Built-in constant</string>
@@ -274,7 +520,7 @@
 			</dict>
 		</dict>
 
-<!-- Boolean -->				
+		<!-- Boolean -->				
 		<dict>
 			<key>name</key>
 			<string>Boolean</string>
@@ -289,7 +535,7 @@
 			</dict>
 		</dict>
 
-<!-- String -->		
+		<!-- String -->		
 		<dict>
 			<key>name</key>
 			<string>String</string>
@@ -304,7 +550,7 @@
 			</dict>
 		</dict>
 
-<!-- String Interpolation -->		
+		<!-- String Interpolation -->		
 		<dict>
 			<key>name</key>
 			<string>String interpolation</string>
@@ -319,7 +565,7 @@
 			</dict>
 		</dict>
 
-<!-- Preprocessor line -->			
+		<!-- Preprocessor line -->			
 		<dict>
 			<key>name</key>
 			<string>Preprocessor line</string>
@@ -334,7 +580,7 @@
 			</dict>
 		</dict>
 
-<!-- Preprocessor directive -->			
+		<!-- Preprocessor directive -->			
 		<dict>
 			<key>name</key>
 			<string>Preprocessor directive</string>
@@ -349,8 +595,7 @@
 			</dict>
 		</dict>
 
-
-<!-- Function name -->			
+		<!-- Function name -->			
 		<dict>
 			<key>name</key>
 			<string>Function name</string>
@@ -365,7 +610,7 @@
 			</dict>
 		</dict>
 
-<!-- Class/namespace name -->			
+		<!-- Class/namespace name -->			
 		<dict>
 			<key>name</key>
 			<string>Class name</string>
@@ -380,7 +625,7 @@
 			</dict>
 		</dict>
 
-<!-- Parameter type -->			
+		<!-- Parameter type -->			
 		<dict>
 			<key>name</key>
 			<string>Storage type</string>
@@ -395,7 +640,7 @@
 			</dict>
 		</dict>
 
-<!-- Storage modifier -->			
+		<!-- Storage modifier -->			
 		<dict>
 			<key>name</key>
 			<string>Type modifier</string>
@@ -410,7 +655,7 @@
 			</dict>
 		</dict>
 
-<!-- Inherited class name -->			
+		<!-- Inherited class name -->			
 		<dict>
 			<key>name</key>
 			<string>Inherited class name</string>
@@ -425,7 +670,7 @@
 			</dict>
 		</dict>
 
-<!--  -->			
+		<!-- Function parameter name  -->			
 		<dict>
 			<key>name</key>
 			<string>Function parameter</string>
@@ -438,7 +683,7 @@
 			</dict>
 		</dict>
 
-<!--  -->		
+		<!-- Function argument and result types  -->		
 		<dict>
 			<key>name</key>
 			<string>Function argument and result types</string>
@@ -453,7 +698,7 @@
 			</dict>
 		</dict>
 
-<!--  -->		
+		<!-- Section -->		
 		<dict>
 			<key>name</key>
 			<string>Section</string>
@@ -466,7 +711,7 @@
 			</dict>
 		</dict>
 
-<!--  -->		
+		<!-- Library function -->		
 		<dict>
 			<key>name</key>
 			<string>Library function</string>
@@ -481,7 +726,7 @@
 			</dict>
 		</dict>
 
-<!--  -->		
+		<!-- Library object -->		
 		<dict>
 			<key>name</key>
 			<string>Library object</string>
@@ -496,7 +741,7 @@
 			</dict>
 		</dict>
 
-<!--  -->		
+		<!-- Library constant -->		
 		<dict>
 			<key>name</key>
 			<string>Library constant</string>
@@ -511,7 +756,7 @@
 			</dict>
 		</dict>
 
-<!--  -->	
+		<!-- Library variable -->	
 		<dict>
 			<key>name</key>
 			<string>Library variable</string>
@@ -526,20 +771,7 @@
 			</dict>
 		</dict>
 
-<!-- JS Operator -->		
-		<dict>
-			<key>name</key>
-			<string>JS: Operator</string>
-			<key>scope</key>
-			<string>keyword.operator.js</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#687687</string>
-			</dict>
-		</dict>
-
-<!-- Invalid -->		
+		<!-- Invalid -->		
 		<dict>
 			<key>name</key>
 			<string>Invalid</string>
@@ -552,7 +784,7 @@
 			</dict>
 		</dict>
 
-<!-- Invalid trailing whitespace -->		
+		<!-- Invalid trailing whitespace -->		
 		<dict>
 			<key>name</key>
 			<string>Invalid trailing whitespace</string>
@@ -565,7 +797,7 @@
 			</dict>
 		</dict>
 
-<!-- Embedded source -->		
+		<!-- Embedded source -->		
 		<dict>
 			<key>name</key>
 			<string>Embedded source</string>
@@ -577,6 +809,7 @@
 				<string>#282828</string>
 			</dict>
 		</dict>
+
 
 <!-- ------------------------------------------------- -->
 <!-- Markup / XML -->	
@@ -654,7 +887,7 @@
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#92CAF4</string>
+				<string>#d7ba7d</string>
 			</dict>
 		</dict>
 		<dict>
@@ -667,7 +900,7 @@
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#C8C8C8</string>
+				<string>#D69D85</string>
 			</dict>
 		</dict>
 		<dict>
@@ -707,6 +940,7 @@
 				<string>#B90690</string>
 			</dict>
 		</dict>
+
 
 <!-- ------------------------------------------------- -->
 <!-- CSS -->	
@@ -800,6 +1034,7 @@
                 <string>#A00</string>
             </dict>
         </dict>         
+
 
 <!-- ------------------------------------------------- -->
 <!-- End -->	
