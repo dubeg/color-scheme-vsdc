@@ -532,6 +532,18 @@
 			</dict>
 		</dict>
 
+        <!-- Labels -->       
+        <dict>
+            <key>name</key>
+            <string>Label</string>
+            <key>scope</key>
+            <string>string.unquoted.label.js</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#d7ba7d</string>
+            </dict>
+        </dict>
 
 	<!-- -------- -->
 	<!-- Defaults -->	
