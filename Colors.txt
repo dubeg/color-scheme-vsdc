@@ -24,7 +24,7 @@ July 2, 2015
 	``````
 	#CCCCCC 	Root text 	
 	#1679bb 	Headings 		Hint: dark blue
-	#BA56A3 	Lists 			Hint: purple
+	#BA56A3 	Lists 			Hint: light purple
 	#92A5B3 	Quotes 			Hint: pale blue
 	#575757 	Code/Raw 		Hint: dark gray
 	#E3DB6D 	Bold 			Hint: yellowish
