@@ -37,6 +37,58 @@
 			</dict>
 		</dict>
 
+
+
+
+    <!-- ---------- -->
+    <!-- Handlebars -->   
+    <!-- ---------- -->
+
+        <!-- Function (ex: format) -->
+        <dict>
+            <key>name</key>
+            <string>  </string>
+            <key>scope</key>
+            <string>meta.function.inline.other.handlebars</string>
+            <key>settings</key>
+            <dict>
+                <key>fontStyle</key>
+                <string></string>
+                <key>foreground</key>
+                <string>#E381CD</string>
+            </dict>
+        </dict>
+
+
+        <!-- {{ }} -->
+        <dict>
+            <key>name</key>
+            <string>  </string>
+            <key>scope</key>
+            <string>support.constant.handlebars, variable.parameter.handlebars</string>
+            <key>settings</key>
+            <dict>
+                <key>fontStyle</key>
+                <string></string>
+                <key>foreground</key>
+                <string>#BA56A3</string>
+            </dict>
+        </dict>
+
+
+        <!-- @variable -->
+        <dict>
+            <key>name</key>
+            <string>  </string>
+            <key>scope</key>
+            <string>variable.parameter.handlebars</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#824474</string>
+            </dict>
+        </dict>
+
 	<!-- -------- -->
 	<!-- Markdown -->	
 	<!-- -------- -->
