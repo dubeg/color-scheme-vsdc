@@ -193,7 +193,7 @@
                 <key>background</key>
                 <string>#262626</string>                
                 <key>foreground</key>
-                <string>#787878</string>
+                <string>#808080</string>
             </dict>
         </dict>
         <dict>
@@ -202,11 +202,13 @@
             <key>scope</key>
             <string>markup.raw.inline.markdown</string>
             <key>settings</key>
-            <dict>                
+            <dict>   
+                <key>background</key>
+                <string>#262626</string>                         
                 <key>foreground</key>
-                <string>#787878</string>
+                <string>#808080</string>
             </dict>
-        </dict>
+        </dict>      
 
         <!-- Bold -->
         <dict>
@@ -278,7 +280,7 @@
            <key>name</key>
             <string>Normal text</string>
             <key>scope</key>
-            <string>text.html.markdown, markup.list.unnumbered.markdown, markup.list.numbered.markdown</string>
+            <string>text.html.markdown</string>
             <key>settings</key>
             <dict>
                 <key>foreground</key>
@@ -367,7 +369,18 @@
             </dict>
         </dict>
 
-        <!-- List Punc -->     
+        <!-- List Punc -->        
+        <dict>
+           <key>name</key>
+            <string>list</string>
+            <key>scope</key>
+            <string>markup.list.unnumbered.markdown, markup.list.numbered.markdown</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#969696</string>                
+            </dict>
+        </dict>             
         <dict>
            <key>name</key>
             <string>Punctuation list</string>
