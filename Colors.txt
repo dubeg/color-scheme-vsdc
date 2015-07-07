@@ -1,40 +1,27 @@
 Colors
 ======
+Latest Revision: 07-05-2015 
 
-Beige 		#d7ba7d 		// JSON key
-Brown 		#D69D85  		// JSON string
-Green2 		#57a64a 		// Comments
-Green1 		#B5CEA8			// Numbers 
-Green3 		#4EC9B0 		// Classes 		
-DarkGray 	#808080 		// Tag punctuation
-
-Blue 		#569CD6 		// Keywords, bools
-DarkBlue 	#0C07FF 		// Markup heading         
-
-PaleBlue 	#92CAF4 		// Old attribute-name color
-Pink/purple #B90690 		// Markup list
-
-
-Markdown
+Beige 		#d7ba7d 		: JSON key
+Brown 		#D69D85  		: JSON string
+Teal 		#4EC9B0 		: Classes 
 --------
-As defined by 'Markdown Extended.tmLanguage'
-July 2, 2015
++Green   	#57a64a 		: Comments
+--Green 	#B5CEA8			: Numbers 
+--------
+++Gray 		#808080 		: Tag punctuation
+-Gray   	#787878 		: md raw
+--------
++Blue 		#1679bb 		: md headings  
+-Blue  		#569CD6 		: true/false, keywords
+--Blue  	#92CAF4 		: tag attr
+--------
++Purple 	#824474
+-purple 	#B90690 		
+--------
+-Yellow 	#E3DB6D
 
-	Colors
-	``````
-	#CCCCCC 	Root text 	
-	#1679bb 	Headings 		Hint: dark blue
-	#BA56A3 	Lists 			Hint: light purple
-	#92A5B3 	Quotes 			Hint: pale blue
-	#575757 	Code/Raw 		Hint: dark gray
-	#E3DB6D 	Bold 			Hint: yellowish
-	#E3DB6D 	Italics 		Hint: yellowish
-	#2E2E2E 	LineBreak 		Hint: gray background
-	#4EC9B0 	Link 			Hint: green/teal
-	#217362 	Link title 		Hint: dark green/teal
-	#4EC9B0 	Image 			Hint: green/teal
-	#217362 	Image title		Hint: dark green/teal
-	#4EC9B0 	Img/link Ref 	Hint: green/teal
-	#B4CEA8 	Image/link Ref ID 	Hint: pale green		
+
+
 
 
