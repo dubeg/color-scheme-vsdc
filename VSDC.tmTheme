@@ -132,13 +132,28 @@
             <key>name</key>
             <string>Heading Markup</string>
             <key>scope</key>
-            <string>markup.heading, markup.heading.markdown</string>
+            <string>markup.heading.markdown</string>
             <key>settings</key>
             <dict>
-               <key>foreground</key>
-                <string>#1679bb</string>
+                <key>fontStyle</key>
+                <string>bold</string>
+                <key>foreground</key>
+                <string>#4EC9B0</string>
             </dict>
         </dict>
+        <dict>
+            <key>name</key>
+            <string>Heading Markup</string>
+            <key>scope</key>
+            <string>punctuation.definition.heading.markdown</string>
+            <key>settings</key>
+            <dict>
+                <key>fontStyle</key>
+                <string>bold</string>
+                <key>foreground</key>
+                <string>#545454</string>
+            </dict>
+        </dict>        
 
         <!-- Quote -->
         <dict>
@@ -147,9 +162,22 @@
             <key>scope</key>
             <string>markup.quote.markdown</string>
             <key>settings</key>
+            <dict>             
+                <key>foreground</key>
+                <string>#D69D85</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>Markdown Quote</string>
+            <key>scope</key>
+            <string>punctuation.definition.blockquote.markdown</string>
+            <key>settings</key>
             <dict>
-               <key>foreground</key>
-                <string>#92A5B3</string>
+                <key>background</key>
+                <string>#D69D85</string>                
+                <key>foreground</key>
+                <string>#D69D85</string>
             </dict>
         </dict>
 
@@ -178,7 +206,7 @@
             </dict>
         </dict>
 
-        <!-- Emphasis -->
+        <!-- Bold -->
         <dict>
             <key>name</key>
             <string>Bold text</string>
@@ -186,10 +214,23 @@
             <string>markup.bold.markdown</string>
             <key>settings</key>
             <dict>
-               <key>foreground</key>
-                <string>#E3DB6D</string>
+                <key>fontStyle</key>
+                <string>bold</string>                   
             </dict>
         </dict>
+        <dict>
+            <key>name</key>
+            <string>Bold Punc</string>
+            <key>scope</key>
+            <string>punctuation.definition.bold.markdown</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#E3DB6D</string>                   
+            </dict>
+        </dict>  
+
+        <!-- Italic -->      
         <dict>
            <key>name</key>
             <string>Italic text</string>
@@ -197,10 +238,21 @@
             <string>markup.italic.markdown</string>
             <key>settings</key>
             <dict>
-               <key>foreground</key>
-                <string>#E3DB6D</string>
+                <key>fontStyle</key>
+                <string>italic</string>                
             </dict>
         </dict>
+        <dict>
+            <key>name</key>
+            <string>Italic Punc</string>
+            <key>scope</key>
+            <string>punctuation.definition.italic.markdown</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#E3DB6D</string>                   
+            </dict>
+        </dict>          
 
         <!-- Inline line break -->
         <dict>
@@ -215,15 +267,15 @@
             </dict>
         </dict>
 
-        <!-- Root scope -->
+        <!-- Normal text -->
         <dict>
            <key>name</key>
-            <string>Root text</string>
+            <string>Normal text</string>
             <key>scope</key>
-            <string>text.html.markdown</string>
+            <string>text.html.markdown, markup.list.unnumbered.markdown, markup.list.numbered.markdown</string>
             <key>settings</key>
             <dict>
-               <key>foreground</key>
+                <key>foreground</key>
                 <string>#CCCCCC</string>
             </dict>
         </dict>
@@ -237,7 +289,7 @@
             <key>settings</key>
             <dict>
                <key>foreground</key>
-                <string>#4EC9B0</string>
+                <string>#569CD6</string>
             </dict>
         </dict>
         <dict>
@@ -248,7 +300,18 @@
             <key>settings</key>
             <dict>
                <key>foreground</key>
-                <string>#217362</string>
+                <string>#BFB38F</string>
+            </dict>
+        </dict>  
+        <dict>
+           <key>name</key>
+            <string>Link title</string>
+            <key>scope</key>
+            <string>markup.underline.link.markdown</string>
+            <key>settings</key>
+            <dict>
+               <key>foreground</key>
+                <string>#569CD6</string>
             </dict>
         </dict>   
 
@@ -261,7 +324,7 @@
             <key>settings</key>
             <dict>
                <key>foreground</key>
-                <string>#4EC9B0</string>
+                <string>#569CD6</string>
             </dict>
         </dict>
         <dict>
@@ -272,7 +335,7 @@
             <key>settings</key>
             <dict>
                <key>foreground</key>
-                <string>#217362</string>
+                <string>#BFB38F</string>
             </dict>
         </dict> 
         <dict>
@@ -283,7 +346,7 @@
             <key>settings</key>
             <dict>
                <key>foreground</key>
-                <string>#4EC9B0</string>
+                <string>#BFB38F</string>
             </dict>
         </dict>  
         <dict>
@@ -293,32 +356,34 @@
             <string>meta.link.reference.def.markdown</string>
             <key>settings</key>
             <dict>
-               <key>foreground</key>
-                <string>#4EC9B0</string>
+                <key>foreground</key>
+                <string>#1679bb</string>
             </dict>
         </dict>
 
-        <!-- List -->     
+        <!-- List Punc -->     
+        <dict>
+           <key>name</key>
+            <string>Punctuation list</string>
+            <key>scope</key>
+            <string>punctuation.definition.list_item.markdown</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#FFFFFF</string>                
+            </dict>
+        </dict> 
+
+        <!-- StrikeThrough -->
         <dict>
            <key>name</key>
             <string>Unnumbered List</string>
             <key>scope</key>
-            <string>markup.list.unnumbered.markdown</string>
+            <string>markup.strikethrough.markdown</string>
             <key>settings</key>
             <dict>
                <key>foreground</key>
-                <string>#BA56A3</string>
-            </dict>
-        </dict>        
-        <dict>
-           <key>name</key>
-            <string>Numbered List</string>
-            <key>scope</key>
-            <string>markup.list.numbered.markdown</string>
-            <key>settings</key>
-            <dict>
-               <key>foreground</key>
-                <string>#BA56A3</string>
+                <string>#D95062</string>
             </dict>
         </dict> 
 
