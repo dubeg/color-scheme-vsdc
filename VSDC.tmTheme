@@ -214,6 +214,8 @@
             <string>markup.bold.markdown</string>
             <key>settings</key>
             <dict>
+                <key>foreground</key>
+                <string>#FFFFFF</string>                  
                 <key>fontStyle</key>
                 <string>bold</string>                   
             </dict>
@@ -226,7 +228,7 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#E3DB6D</string>                   
+                <string>#707070</string>                   
             </dict>
         </dict>  
 
@@ -238,6 +240,8 @@
             <string>markup.italic.markdown</string>
             <key>settings</key>
             <dict>
+                <key>foreground</key>
+                <string>#E6DD7E</string>                    
                 <key>fontStyle</key>
                 <string>italic</string>                
             </dict>
@@ -250,7 +254,7 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#E3DB6D</string>                   
+                <string>#707070</string>                   
             </dict>
         </dict>          
 
