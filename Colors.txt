@@ -16,12 +16,7 @@ Teal 		#4EC9B0 		: Classes
 -Blue  		#569CD6 		: true/false, keywords
 --Blue  	#92CAF4 		: tag attr
 --------
-+Purple 	#824474
--purple 	#B90690 		
+-Purple 	#824474
++purple 	#B90690 		
 --------
 -Yellow 	#E3DB6D
-
-
-
-
-
