@@ -7,13 +7,12 @@
 	<string>VSDC</string>
 	<key>author</key>
 	<string>github/dubeg</string>	
-
-	<key>original_name</key>
-	<string>Visual Studio Dark</string>	
-	<key>original_author</key>
-	<string>Niklas Mollenhauer</string>
-
-	<key>settings</key>
+	<key>origin</key>
+    <array>
+        <string>Visual Studio Dark</string> 
+        <string>Niklas Mollenhauer</string>
+    </array>
+    <key>settings</key>
 	<array>
 		<dict>
 			<key>settings</key>
@@ -25,7 +24,7 @@
 				<key>foreground</key>
 				<string>#FFFFFF40</string><!-- Transparency '40' to dim tabs -->
 				<key>invisibles</key>
-				<string>#FFFFFF40</string><!-- Unused in Subl -->
+				<string>#FFFFFF40</string><!-- Ignored -->
 				<key>lineHighlight</key>
 				<string>#282828</string>
 				<key>gutterForeground</key>
@@ -34,17 +33,17 @@
 				<string>#264F78</string>
 				<key>inactiveSelection</key>
 				<string>#343434</string>
+                <key>shadow</key>
+                <string>#000000</string><!-- Shadow of minimap -->
+                <key>shadowWidth</key>
+                <string>2</string> <!-- Max:1-32 -->
 			</dict>
 		</dict>
-
-
-
-
     <!-- ---------- -->
     <!-- Handlebars -->   
     <!-- ---------- -->
 
-        <!-- Function (ex: format) -->
+        <!-- Function (ex: format) -->   
         <dict>
             <key>name</key>
             <string>  </string>
@@ -52,8 +51,6 @@
             <string>meta.function.inline.other.handlebars</string>
             <key>settings</key>
             <dict>
-                <key>fontStyle</key>
-                <string></string>
                 <key>foreground</key>
                 <string>#E381CD</string>
             </dict>
@@ -68,8 +65,6 @@
             <string>support.constant.handlebars, variable.parameter.handlebars</string>
             <key>settings</key>
             <dict>
-                <key>fontStyle</key>
-                <string></string>
                 <key>foreground</key>
                 <string>#BA56A3</string>
             </dict>
@@ -181,7 +176,6 @@
             </dict>
         </dict>
 
-
         <!-- Code / Raw -->
         <dict>
             <key>name</key>
@@ -270,7 +264,7 @@
             <string>meta.dummy.line-break</string>
             <key>settings</key>
             <dict>
-               <key>background</key>
+                <key>background</key>
                 <string>#2E2E2E</string>
             </dict>
         </dict>
@@ -1317,12 +1311,7 @@
 				<key>foreground</key>
 				<string>#1679bb</string>
 			</dict>
-		</dict>      
-
-
-	<!-- --- -->
-	<!-- End -->	
-	<!-- --- -->			
+		</dict>      		
 	</array>
 	<key>uuid</key>
 	<string>0eef40c2-2f4b-497e-82cb-ae50d9f834ea</string>
