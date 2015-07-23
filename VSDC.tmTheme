@@ -108,8 +108,6 @@
             <dict>
                 <key>foreground</key>
                 <string>#636363</string>
-                <key>fontStyle</key>
-                <string>bold</string>                
             </dict>
         </dict>          
         <dict>
@@ -147,8 +145,6 @@
             <dict>
                 <key>foreground</key>
                 <string>#636363</string>
-                <key>fontStyle</key>
-                <string>bold</string>                
             </dict>
         </dict>          
         <dict>
