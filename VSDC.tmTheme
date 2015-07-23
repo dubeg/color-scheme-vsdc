@@ -52,9 +52,9 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#3599DB</string>
+                <string>#EDEDED</string>
                 <key>background</key>
-                <string>#262626</string>
+                <string>#2B2B2B</string>
                 <key>fontStyle</key>
                 <string>bold</string>
             </dict>
@@ -96,11 +96,22 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#5DC98A</string><!-- 28C96B -->
+                <string>#525252</string><!-- 28C96B -->              
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>Completed item Tag</string>
+            <key>scope</key>
+            <string>meta.tag.todo.completed</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#636363</string>
                 <key>fontStyle</key>
                 <string>bold</string>                
             </dict>
-        </dict> 
+        </dict>          
         <dict>
             <key>name</key>
             <string>Completed item Punctuation</string>
@@ -120,15 +131,26 @@
             <key>name</key>
             <string>Cancelled item</string>
             <key>scope</key>
-            <string>meta.tag.todo.cancelled, comment.line.cancelled.todo, meta.item.todo.cancelled</string>
+            <string>comment.line.cancelled.todo, meta.item.todo.cancelled</string>
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#D96262</string>
-                <key>fontStyle</key>
-                <string>bold</string>                  
+                <string>#525252</string>              
             </dict>
-        </dict> 
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>Cancelled item Tag</string>
+            <key>scope</key>
+            <string>meta.tag.todo.cancelled</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#636363</string>
+                <key>fontStyle</key>
+                <string>bold</string>                
+            </dict>
+        </dict>          
         <dict>
             <key>name</key>
             <string>Cancelled item Punctuation</string>
