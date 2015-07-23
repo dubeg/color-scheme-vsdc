@@ -18,7 +18,7 @@
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#1E1E1E</string>
+				<string>#222222</string><!-- MonokaiEx: 222222 --> <!-- DC: 1E1E1E -->
 				<key>caret</key>
 				<string>#DCDCDC</string>
 				<key>foreground</key>
@@ -27,6 +27,8 @@
 				<string>#FFFFFF40</string><!-- Ignored -->
 				<key>lineHighlight</key>
 				<string>#282828</string>
+                <key>gutterBackground</key>
+                <string>#073642</string>
 				<key>gutterForeground</key>
 				<string>#264F78</string><!-- VS:2b91af -->
 				<key>selection</key>
