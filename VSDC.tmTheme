@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-
+<!-- Based from the work done on "Visual Studio Dark" by Niklas Mollenhauer -->
 <plist version="1.0">
 <dict>
 	<key>name</key>
 	<string>VSDC</string>
 	<key>author</key>
 	<string>github/dubeg</string>	
-	<key>origin</key>
-    <array>
-        <string>Visual Studio Dark</string> 
-        <string>Niklas Mollenhauer</string>
-    </array>
     <key>settings</key>
 	<array>
 		<dict>
