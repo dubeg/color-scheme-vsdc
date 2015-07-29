@@ -1,20 +1,20 @@
+======
 Colors
 ======
-Latest Revision: 07-05-2015 
 
-Beige 		#d7ba7d 		: JSON key
-Brown 		#D69D85  		: JSON string
-Teal 		#4EC9B0 		: Classes 
+Beige 		#d7ba7d 		
+Brown 		#D69D85  		
+Teal 		#4EC9B0 		
 --------
-+Green   	#57a64a 		: Comments
---Green 	#B5CEA8			: Numbers 
++Green   	#57a64a 		
+--Green 	#B5CEA8			
 --------
-++Gray 		#808080 		: Tag punctuation
--Gray   	#787878 		: md raw
+++Gray 		#808080 		
+-Gray   	#787878 		
 --------
-+Blue 		#1679bb 		: md headings  
--Blue  		#569CD6 		: true/false, keywords
---Blue  	#92CAF4 		: tag attr
++Blue 		#1679bb 		
+-Blue  		#569CD6 		
+--Blue  	#92CAF4 		
 --------
 -Purple 	#824474
 +purple 	#B90690 		
@@ -22,5 +22,17 @@ Teal 		#4EC9B0 		: Classes
 -Yellow 	#E3DB6D
 
 
------------------------------------------------
-Background: 222022
+------------------------
+Foreground
+	Current: 	FFFFFF40 	# A:40 to dim tab characters.
+
+Background
+	Current: 	222022
+	Old: 		202020
+	Monosoda: 	222222
+	VS: 		?
+
+Gutter Foreground
+	Current: 	32407D
+	Old: 		264F78
+	VS: 		2B91AF

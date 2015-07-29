@@ -13,25 +13,25 @@
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#202020</string><!-- MonokaiEx: 222222 --> <!-- DC: 1E1E1E --> 
+				<string>#222022</string>
 				<key>caret</key>
 				<string>#DCDCDC</string>
 				<key>foreground</key>
-				<string>#FFFFFF40</string><!-- Transparency '40' to dim tabs -->
-				<key>invisibles</key>
-				<string>#FFFFFF40</string><!-- Ignored -->
+				<string>#FFFFFF40</string>
 				<key>lineHighlight</key>
 				<string>#282828</string>
 				<key>gutterForeground</key>
-				<string>#264F78</string><!-- VS:2b91af -->
+				<string>#32407D</string>
 				<key>selection</key>
 				<string>#264F78</string>
 				<key>inactiveSelection</key>
 				<string>#343434</string>
+                <!-- Shadow of minimap -->
                 <key>shadow</key>
-                <string>#000000</string><!-- Shadow of minimap -->
+                <string>#000000</string>
                 <key>shadowWidth</key>
-                <string>2</string> <!-- Max:1-32 -->
+                <!-- Max:1-32 -->
+                <string>2</string>
 			</dict>
 		</dict>
     <!-- ---------- -->
