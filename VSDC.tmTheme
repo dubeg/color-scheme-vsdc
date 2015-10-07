@@ -13,7 +13,7 @@
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#222022</string>
+				<string>#242324</string><!-- #222020 -->
 				<key>caret</key>
 				<string>#DCDCDC</string>
 				<key>foreground</key>
@@ -21,7 +21,7 @@
 				<key>lineHighlight</key>
 				<string>#282828</string>
 				<key>gutterForeground</key>
-				<string>#32407D</string>
+				<string>#39498f</string>
 				<key>selection</key>
 				<string>#264F78</string>
 				<key>inactiveSelection</key>
