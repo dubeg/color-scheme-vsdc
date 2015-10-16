@@ -1,11 +1,15 @@
-# Readme
+# Color Scheme - VSDC
 
-This repo contains a modified version of the color scheme 'Visual Studio Dark' created by Niklas Mollenhauer. 
+Name: VS (Visual Studio) DC (made alongside the DC theme).
 
-As this color scheme is related to Visual Studio and one of its main language, CSharp, I decided to modify the default CSharp syntax definition file as well to make it fit more faithfully the colors of the scheme. 
+# Original
 
-# Differences from the original scheme
+Modified version of the color scheme 'Visual Studio Dark' created by Niklas Mollenhauer. 
 
-Recently, I adapted the scheme so that it works well with the Markdown Extended syntax definition. Since the original file didn't contain any specific color for Markdown, and Visual Studio doesn't provide syntax highlighting for Markdown by default, I decided to get creative.
+# Screenshots
 
-I'll see what the syntax highlighting looks like with it in VSCode though.
+HTML
+![HTML Highlighting](http://i.imgur.com/vaFN2xb.png)
+
+JSON
+![JSON Highlighting](http://i.imgur.com/uUeSCjT.png)
