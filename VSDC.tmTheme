@@ -13,7 +13,7 @@
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#242324</string><!-- #222020 -->
+				<string>#232324</string><!-- #242324 #222020 -->
 				<key>caret</key>
 				<string>#DCDCDC</string>
 				<key>foreground</key>
