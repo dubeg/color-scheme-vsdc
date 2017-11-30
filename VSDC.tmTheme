@@ -17,26 +17,40 @@
 				<key>caret</key>
 				<string>#DCDCDC</string>
 				<key>foreground</key>
-				<string>#FFFFFF40</string>
+				<string>#FFFFFF</string>
 				<key>lineHighlight</key>
 				<string>#282828</string>
 				<key>gutterForeground</key>
 				<string>#39498f</string>
+
 				<key>selection</key>
 				<string>#264F78</string>
 				<key>inactiveSelection</key>
 				<string>#343434</string>
-                <!-- Shadow of minimap -->
+                <!-- ~~~~~~~~~~~~~~~~~~~~~ 
+                    Minimap
+                    ~~~~~~~~~~~~~~~~~~~~~ -->
                 <key>shadow</key>
                 <string>#000000</string>
                 <key>shadowWidth</key>
-                <!-- Max:1-32 -->
-                <string>2</string>
+                <string>2</string><!-- Max:1-32 -->
+
+                <!-- ~~~~~~~~~~~~~~~~~~~~~
+                    Highlighted Occurences
+                    ~~~~~~~~~~~~~~~~~~~~~~ -->
+                <key>highlight</key><!-- Border -->
+                <string>#FFF</string>
+                <key>findHighlight</key>
+                <string>#FFE792</string>
+                <key>findHighlightForeground</key>
+                <string>#000000</string>
+
+
 			</dict>
 		</dict>
-    <!-- ---------- -->
+    <!-- ~~~~~~~~~~~~ -->
     <!-- PlainTasks -->   
-    <!-- ---------- -->   
+    <!-- ~~~~~~~~~~~~ -->   
 
         <!-- Header -->
         <dict>
@@ -259,9 +273,9 @@
             </dict>
         </dict>  
 
-    <!-- ---------- -->
+    <!-- ~~~~~~~~~~~~ -->
     <!-- Handlebars -->   
-    <!-- ---------- -->
+    <!-- ~~~~~~~~~~~~ -->
 
         <!-- Function (ex: format) -->   
         <dict>
@@ -304,9 +318,9 @@
             </dict>
         </dict>
 
-	<!-- -------- -->
+	<!-- ~~~~~~~~~~~~ -->
 	<!-- Markdown -->	
-	<!-- -------- -->
+	<!-- ~~~~~~~~~~~~ -->
 	<!-- 
 		Markdown scopes as defined by Markdown Extended
 
@@ -619,9 +633,9 @@
             </dict>
         </dict> 
 
-	<!-- ---- -->
+	<!-- ~~~~~~~~~~~~ -->
 	<!-- JSON -->	
-	<!-- ---- -->
+	<!-- ~~~~~~~~~~~~ -->
         <!-- Key -->
         <dict>
             <key>name</key>
@@ -648,9 +662,9 @@
             </dict>
         </dict> 	
         
-	<!-- ---- -->
+	<!-- ~~~~~~~~~~~~ -->
 	<!-- YAML -->	
-	<!-- ---- -->
+	<!-- ~~~~~~~~~~~~ -->
 	<!-- 
 		YAML scopes as defined by the default YAML package.
 
@@ -741,9 +755,9 @@
             </dict>
         </dict>  
 
-	<!-- ----------- -->
+	<!-- ~~~~~~~~~~~~ -->
 	<!-- C# / CSharp -->	
-	<!-- ----------- -->       
+	<!-- ~~~~~~~~~~~~ -->       
         <!-- interface color -->
         <dict>
             <key>name</key>
@@ -810,9 +824,9 @@
         </dict>         
  
 
-	<!-- ---------- -->
+	<!-- ~~~~~~~~~~~~ -->
 	<!-- JavaScript -->	
-	<!-- ---------- -->	
+	<!-- ~~~~~~~~~~~~ -->	
 		<!-- Operator -->		
 		<dict>
 			<key>name</key>
@@ -839,9 +853,9 @@
             </dict>
         </dict>
 
-	<!-- -------- -->
+	<!-- ~~~~~~~~~~~~ -->
 	<!-- Defaults -->	
-	<!-- -------- -->	
+	<!-- ~~~~~~~~~~~~ -->	
 		<!-- Comment -->
 		<dict>
 			<key>name</key>
@@ -1268,6 +1282,18 @@
 		</dict>
 		-->
 
+        <dict>
+            <key>name</key>
+            <string>Punctuation</string>
+            <key>scope</key>
+            <string>punctuation.section.group, meta.parens</string>
+            <key>settings</key>
+            <dict>
+               <key>foreground</key>
+                <string>#FFF</string>
+            </dict>
+        </dict>           
+
         <!-- meta.class.instance.constructor -->
         <dict>
             <key>name</key>
@@ -1281,9 +1307,19 @@
             </dict>
         </dict>   
 
-	<!-- ------------ -->
+        <dict>
+            <key>scope</key>
+            <string>source.python meta.annotation.python, source.python meta.annotation.python meta.qualified-name.python support.function.builtin</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#68685B</string>
+            </dict>
+        </dict>
+
+	<!-- ~~~~~~~~~~~~ -->
 	<!-- Markup / XML -->	
-	<!-- ------------ -->	
+	<!-- ~~~~~~~~~~~~ -->	
 		<dict>
 			<key>name</key>
 			<string>Markup XML declaration</string>
@@ -1418,9 +1454,9 @@
 			</dict>
 		</dict>
 
-	<!-- --- -->
+	<!-- ~~~~~~~~~~~~ -->
 	<!-- CSS -->	
-	<!-- --- -->	
+	<!-- ~~~~~~~~~~~~ -->	
 
         <!-- Tags -->		
 		<dict>
@@ -1533,7 +1569,74 @@
 				<key>foreground</key>
 				<string>#1679bb</string>
 			</dict>
-		</dict>      		
+		</dict>
+
+    <!-- ~~~~~~~~~~~~ -->
+    <!-- SQL -->    
+    <!-- ~~~~~~~~~~~~ -->
+        <dict>
+            <key>name</key>
+            <string>Sql Variable</string>
+            <key>scope</key>
+            <string>source.sql variable, source.sql function</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#FFFFFFA0</string>
+            </dict>
+        </dict>
+
+        <dict>
+            <key>name</key>
+            <string>Sql Name Delimiter</string>
+            <key>scope</key>
+            <string>source.sql delimiter</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#FFFFFF70</string>
+            </dict>
+        </dict>
+
+        <dict>
+            <key>name</key>
+            <string>Sql Functions</string>
+            <key>scope</key>
+            <string>source.sql support.function</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#E381CD</string>
+            </dict>
+        </dict>
+
+        <dict>
+            <key>name</key>
+            <string>Sql Execute</string>
+            <key>scope</key>
+            <string>source.sql support.function.execute</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#ffa756</string>
+            </dict>
+        </dict>
+
+    <!-- ~~~~~~~~~~~~ -->
+    <!-- Powershell -->    
+    <!-- ~~~~~~~~~~~~ -->
+        <dict>
+            <key>name</key>
+            <string>Powershell Variable</string>
+            <key>scope</key>
+            <string>source.powershell variable</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#FFFFFF80</string>
+            </dict>
+        </dict>
+
 	</array>
 	<key>uuid</key>
 	<string>0eef40c2-2f4b-497e-82cb-ae50d9f834ea</string>
